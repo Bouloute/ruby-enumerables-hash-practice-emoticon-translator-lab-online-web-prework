@@ -5,7 +5,7 @@ def load_library(path)
   meaning = {}
   library.each{|key, value|
     #meaning[key] = value[1]
-    puts value[0]
+    puts value[1]
   }
   
   hash = {"get_meaning" => meaning, "get_emoticon" => {}}
