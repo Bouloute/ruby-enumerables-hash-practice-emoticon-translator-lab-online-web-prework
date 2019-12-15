@@ -9,7 +9,7 @@ def get_japanese_emoticon(path, emoticon_to_get)
   emitocons = load_library(path)
   japanese_emoticon
   emoticons.each{|emoticon|
-    puts emoticon[
+    puts emoticon
   }
 end
 
