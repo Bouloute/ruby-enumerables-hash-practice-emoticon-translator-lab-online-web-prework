@@ -7,7 +7,7 @@ def load_library(path)
   meaning = {}
   
   library.each{|key, value|
-    emitocon[value[0]] = key
+    emitocon[value[0]] = value[1]
     meaning[value[1]] = key
   }
   
