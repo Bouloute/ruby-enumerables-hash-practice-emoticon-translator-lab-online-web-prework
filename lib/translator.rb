@@ -1,9 +1,8 @@
 require "yaml"
-#require "pry"
 
 def load_library(path)
-  #file = File.read(file_path)
-  YAML.load_file( path )
+  library = YAML.load_file( path )
+  hash {"get_meaning" => {}, get_japanese_emoticon
 end
 
 def get_japanese_emoticon(path, emoticon_to_get)
