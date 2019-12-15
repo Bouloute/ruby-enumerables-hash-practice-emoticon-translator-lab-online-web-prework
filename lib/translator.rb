@@ -11,7 +11,7 @@ def load_library(path)
     meaning[value[1]] = key
   }
   
-  hash = {"get_meaning" => meaning, "get_emoticon" => {}}
+  hash = {"get_meaning" => meaning, "get_emoticon" => emitocon}
 end
 
 def get_japanese_emoticon(path, emoticon_to_get)
