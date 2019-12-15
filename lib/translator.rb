@@ -4,8 +4,7 @@ def load_library(path)
   library = YAML.load_file( path )
   meaning = {}
   library.each{|key, value|
-    meaning[key] = value[1]
-    puts meaning[key]
+    meaning[value[1]] = key
   }
   
   hash = {"get_meaning" => meaning, "get_emoticon" => {}}
