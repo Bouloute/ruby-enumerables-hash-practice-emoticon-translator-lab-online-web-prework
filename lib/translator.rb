@@ -4,7 +4,9 @@ def load_library(path)
   library = YAML.load_file( path )
   
   library.each{|key, value|
+    puts "key"
     puts key
+    puts "value"
     puts value
     puts
   }
