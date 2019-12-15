@@ -24,14 +24,10 @@ def get_english_meaning(path, japanese_emoticon)
   emitocons = load_library(path)
   
   emitocons["get_emoticon"].each{|english_meaning|
-  puts japanese_emoticon
-  puts "english_meaning"
-  puts english_meaning
-  puts
-    if english_meaning == japanese_emoticon
+    if english_meaning[0] == japanese_emoticon
       return english_meaning
     end
-    return "Sorry, that emoticon was not found"
+    
   }
-  
+  return "Sorry, that emoticon was not found"
 end
