@@ -2,8 +2,9 @@ require "yaml"
 
 def load_library(path)
   library = YAML.load_file( path )
-  
+  meaning ={}
   library.each{|key, value|
+  meaning[]
     puts "key"
     puts key
     puts "value"
