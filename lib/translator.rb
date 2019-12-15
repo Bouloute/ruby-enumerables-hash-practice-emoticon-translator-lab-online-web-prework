@@ -7,7 +7,7 @@ def load_library(path)
     meaning[key] = value[1]
     
   }
-  pp meaning
+  pp meaning.keys
   hash = {"get_meaning" => meaning, "get_emoticon" => {}}
 end
 
