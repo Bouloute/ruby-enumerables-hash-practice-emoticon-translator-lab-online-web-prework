@@ -23,5 +23,6 @@ end
 def get_english_meaning(path, japanese_emoticon)
   emitocons = load_library(path)
   
+  emitocons["get_emoticon"].each{|emoticon_to_get| }
   emitocons["get_emoticon"][emoticon_to_get] == nil ? "Sorry, that emoticon was not found" : emitocons["get_emoticon"][emoticon_to_get]
 end
