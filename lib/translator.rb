@@ -25,7 +25,7 @@ def get_english_meaning(path, japanese_emoticon)
   
   emitocons["get_emoticon"].each{|english_meaning|
     if english_meaning[0] == japanese_emoticon
-      return english_meaning
+      return english_meaning[0]
     end
     
   }
