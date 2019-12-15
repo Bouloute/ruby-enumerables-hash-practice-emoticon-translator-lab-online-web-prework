@@ -17,6 +17,7 @@ end
 def get_japanese_emoticon(path, emoticon_to_get)
   emitocons = load_library(path)
   
+  puts emoticon_to_get
   puts emitocons["get_emoticon"][emoticon_to_get]
 end
 
