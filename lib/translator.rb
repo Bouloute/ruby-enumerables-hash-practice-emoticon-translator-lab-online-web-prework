@@ -2,8 +2,12 @@ require "yaml"
 
 def load_library(path)
   library = YAML.load_file( path )
+  
+  emitocon = {}
   meaning = {}
+  
   library.each{|key, value|
+    emitocon[value[0]] = key
     meaning[value[1]] = key
   }
   
